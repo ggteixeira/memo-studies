@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  button {
+    width: 150px;
+    height: 3rem;
+    font-weight: bold;
+  }
+}
+
+.update-box {
+  height: 150px;
+  width: 150px;
+  background: rgba(0, 0, 0, 0.2);
+  display: grid;
+  place-items: center;
+}
+.not-update-box {
+  height: 150px;
+  width: 150px;
+  background: rgba(0, 0, 0, 0.2);
+  display: grid;
+  place-items: center;
+}
