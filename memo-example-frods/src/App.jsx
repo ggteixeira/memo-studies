@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./reset.css";
 import "./App.css";
 import UpdateBox from "./components/UpdatedBox";
 import NotUpdateBox from "./components/NotUpdatedBox";

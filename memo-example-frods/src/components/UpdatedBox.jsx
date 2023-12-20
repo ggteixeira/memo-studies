@@ -5,12 +5,14 @@ const UpdateBox = ({ item }) => {
     <div
       className="update-box"
       style={{
-        backgroundColor: item ? "firebrick" : "gray",
+        width: "15rem",
+        height: "15rem",
+        backgroundColor: item ? "#FFAFCC" : "#A2D2FF",
         transition: "0.5s",
       }}
     >
       <p> Update Box</p>
-      <p>{item.toString()}</p>
+      <p className="boolean-marker">{item.toString()}</p>
     </div>
   );
 };

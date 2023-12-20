@@ -6,11 +6,11 @@ const NotUpdateBox = () => {
 
   useEffect(() => {
     console.log("NotUpdateBox: atualizou");
-    box.current.style.backgroundColor = "firebrick";
+    box.current.style.backgroundColor = "#FFAFCC";
   });
 
   setTimeout(() => {
-    box.current.style.backgroundColor = "gray";
+    box.current.style.backgroundColor = "#A2D2FF";
   }, 250);
 
   return (
@@ -18,17 +18,20 @@ const NotUpdateBox = () => {
       ref={box}
       id="box"
       style={{
-        transition: "0.5s",
+        width: "15rem",
+        height: "15rem",
+        transition: "1s",
         backgroundColor:
-          boxColor && boxColor === "firebrick" ? "firebrick" : "gray",
+          boxColor && boxColor === "#FFAFCC" ? "firebrick" : "#A2D2FF",
       }}
       className="not-update-box"
     >
-      Non Updating Box
+      Box that does not update
     </div>
   );
 };
 
 NotUpdateBox.displayName = "NotUpdateBox";
-export default NotUpdateBox;
-// export default memo(NotUpdateBox);
+
+// export default NotUpdateBox;
+export default memo(NotUpdateBox);
