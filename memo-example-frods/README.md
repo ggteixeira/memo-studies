@@ -1,15 +1,4 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-Anotações do texto [Why React Re-Renders?](https://www.joshwcomeau.com/react/why-react-re-renders/?utm_source=pocket_saves)
-
-- Entender o life cycle do React nos faz entender automaticamente o _memo()_ e o _useCallback()_
+# The memo() studies and why React re-renders
 
 ## Mal-entendido 1: o app inteiro re-renderiza sempre que ocorre uma mudança de estado
 
