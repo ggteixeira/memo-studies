@@ -1,25 +1,23 @@
 import PropTypes from "prop-types";
 
-const UpdateBox = ({ item }) => {
+const UpdateBox = ({ state }) => {
   return (
     <div
       className="update-box"
       style={{
-        width: "15rem",
-        height: "15rem",
-        backgroundColor: item ? "#FFAFCC" : "#A2D2FF",
-        transition: "0.5s",
+        backgroundColor: state ? "#FFAFCC" : "#A2D2FF",
       }}
     >
-      <p> Update Box</p>
-      <p className="boolean-marker">{item.toString()}</p>
+      <div>
+        <p> I'll always update with the state change</p>
+      </div>
+      <p className="boolean-marker">{state.toString()}</p>
     </div>
   );
 };
 
 UpdateBox.propTypes = {
-  item: PropTypes.boolean,
-  setItem: PropTypes.func,
+  state: PropTypes.boolean,
 };
 
 export default UpdateBox;

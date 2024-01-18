@@ -1,45 +1,49 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
   background: rgba(0, 0, 0, 0.3);
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 1rem;
   button {
     width: 15rem;
     height: 3rem;
     font-weight: bold;
-    border-radius: 0%;
-    border: none;
-    color: #b2b2b2;
+    border-radius: 0.5rem;
+    transition: 0.25s;
+
+    border: 2px solid #a2d2ff;
     &:hover {
       background: #b2b2b2;
-      border: 2px solid #e9e9ed;
+      border: 2px solid none;
       transition: 0.25s;
       color: #e9e9e9;
     }
     &:active {
-      transition: 0s;
+      transition: 0.25s;
       background: #ffafcc;
       transform: translateY(5px);
     }
   }
 }
 
-.update-box {
-  height: 150px;
-  width: 150px;
-  background: rgba(0, 0, 0, 0.2);
-  display: grid;
-  place-items: center;
+.vertical-line {
+  border-left: #a2d2ff solid 0.25rem;
+  height: 2rem;
 }
-.not-update-box {
-  height: 150px;
-  width: 150px;
+
+.not-update-box,
+.update-box {
+  height: 15rem;
+  width: 15rem;
   background: rgba(0, 0, 0, 0.2);
   display: grid;
+  transition: 0.5s;
   place-items: center;
+  border-radius: 0.5rem;
+  div {
+    padding: 0.5rem;
+  }
 }
 
 .boolean-marker {

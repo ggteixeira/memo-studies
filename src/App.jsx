@@ -5,13 +5,17 @@ import UpdateBox from "./components/UpdatedBox";
 import NotUpdateBox from "./components/NotUpdatedBox";
 
 function App() {
-  const [item, setItem] = useState(false);
+  const [state, setState] = useState(false);
 
   return (
     <div>
       <div className="container">
-        <button onClick={() => setItem((curr) => !curr)}>Click to blink</button>
-        <UpdateBox item={item} setItem={setItem} />
+        <button onClick={() => setState((curr) => !curr)}>
+          Click to update state
+        </button>
+        <div className="vertical-line"></div>
+        <UpdateBox state={state} />
+        <div className="vertical-line"></div>
         <NotUpdateBox />
       </div>
     </div>
