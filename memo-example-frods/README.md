@@ -25,11 +25,9 @@ Se para pelo menos uma pessoa presente esse conhecimento repassado não for óbv
 - A primeira dúvida decorrente disso é: mas quando _props_ mudam o React também dispara uma re-renderização, certo?
 
 - Existem duas respostas:
-
 1. uma _prop_ re-renderizada, esteja onde estiver, re-renderiza o componente no qual ela nasce
 
 2. um componente re-renderizado, automaticamente re-renderiza todos os seus descendentes, até o final da árvore
-
 - Como a função do React é… reagir a mudanças de estado, ele utiliza essa estratégia top-down de re-renderização para manter o virtual-DOM sempre sincronizado na tela
 
 # Mal-entendido 2: um componente é re-renderizado porque uma prop que ele recebe mudou
