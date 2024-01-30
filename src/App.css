@@ -9,7 +9,7 @@
     width: 15rem;
     height: 3rem;
     font-weight: bold;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     transition: 0.25s;
 
     border: 2px solid #a2d2ff;
@@ -40,7 +40,7 @@
   display: grid;
   transition: 0.5s;
   place-items: center;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   div {
     padding: 0.5rem;
   }
@@ -51,4 +51,5 @@
   padding: 0.5rem;
   width: 5rem;
   text-align: center;
+  border-radius: 0.25rem;
 }
