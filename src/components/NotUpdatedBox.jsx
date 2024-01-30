@@ -15,7 +15,7 @@ const NotUpdateBox = () => {
   return (
     <div ref={box} id="box" className="not-update-box">
       <div>
-        <p>I'm not updating, unless you use memo()</p>
+        <p>I'm also updating, unless you use memo()</p>
       </div>
     </div>
   );

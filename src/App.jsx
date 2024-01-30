@@ -11,9 +11,11 @@ function App() {
     <div>
       <div className="container">
         <button onClick={() => setState((curr) => !curr)}>
-          Click to update state
+          Click here to update state
         </button>
+
         <div className="vertical-line"></div>
+
         <UpdateBox state={state} />
         <div className="vertical-line"></div>
         <NotUpdateBox />
