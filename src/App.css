@@ -1,30 +1,38 @@
 .container {
   display: flex;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.3);
+  background-color: #f6f3f4;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  button {
-    width: 15rem;
-    height: 3rem;
-    font-weight: bold;
-    border-radius: 0.25rem;
-    transition: 0.25s;
+}
 
-    border: 2px solid #a2d2ff;
-    &:hover {
-      background: #b2b2b2;
-      border: 2px solid none;
-      transition: 0.25s;
-      color: #e9e9e9;
-      cursor: pointer;
-    }
-    &:active {
-      transition: 0.25s;
-      background: #ffafcc;
-      transform: translateY(5px);
-    }
+.update-button {
+  width: 15rem;
+  height: 3rem;
+  font-weight: bold;
+  color: #355882;
+
+  border-radius: 8px;
+  transition: 0.25s;
+
+  border: 2px solid #a2d2ff;
+
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  &:hover {
+    background: #b2b2b2;
+    border: 2px solid none;
+    transition: 0.25s;
+    color: #e9e9e9;
+    cursor: pointer;
+  }
+  &:active {
+    transition: 0.25s;
+    background: #ffafcc;
+    transform: translateY(5px);
   }
 }
 
@@ -38,19 +46,26 @@
   height: 15rem;
   width: 15rem;
   background: rgba(0, 0, 0, 0.2);
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   display: grid;
   transition: 0.5s;
   place-items: center;
-  border-radius: 0.25rem;
+  border: 3px solid #a2d2ff;
+  border-radius: 8px;
+
   div {
-    padding: 0.5rem;
+    padding: 0.25rem;
   }
 }
 
 .boolean-marker {
-  border: 1px solid black;
   padding: 0.5rem;
   width: 5rem;
   text-align: center;
-  border-radius: 0.25rem;
+  border-radius: 8px;
+  border: 1px solid black;
+  color: #355882;
+  border: solid #355882 1px;
 }
