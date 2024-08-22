@@ -23,5 +23,5 @@ const NotUpdateBox = () => {
 
 NotUpdateBox.displayName = "NotUpdateBox";
 
-export default NotUpdateBox;
-// export default memo(NotUpdateBox);
+// export default NotUpdateBox;
+export default memo(NotUpdateBox);
