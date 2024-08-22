@@ -2,6 +2,18 @@
 
 # Why React re-renders? Understanding (more about) props and memo
 
+<!--toc:start-->
+
+- [Why React re-renders? Understanding (more about) props and memo](#why-react-re-renders-understanding-more-about-props-and-memo)
+  - [Verdade 1](#verdade-1)
+  - [Verdade 2](#verdade-2)
+  - [Mal-entendido 1: o app inteiro re-renderiza sempre que ocorre uma mudança de estado](#mal-entendido-1-o-app-inteiro-re-renderiza-sempre-que-ocorre-uma-mudança-de-estado)
+  - [Mal-entendido 2: um componente é re-renderizado porque uma prop que ele recebe mudou](#mal-entendido-2-um-componente-é-re-renderizado-porque-uma-prop-que-ele-recebe-mudou)
+  - [Demarcando componentes puros](#demarcando-componentes-puros)
+  - [Memoização](#memoização)
+  - [quando a memoização é desnecessária](#quando-a-memoização-é-desnecessária)
+  <!--toc:end-->
+
 Existem alguns mal-entendidos (_misconceptions_) a respeito de por que o React... reage. É uma característica fundamental que confesso que passei anos achando que compreendia por esse conceito não ser crucial no dia a dia.
 
 É curioso, entretanto, imaginar que um dev com anos de experiência em front-end, especificamente dentro do ecossistema do React, não sabia responder de bate-pronto quais são os eventos que ativam as re-renderizações do React e o que acontece depois que a re-renderização é disparada. Esse dev era eu — e foi por isso que criei esta talk. Se você tem a mesma dúvida que eu tinha, vou tentar te ajudar. É bem simples.
@@ -66,3 +78,7 @@ Na prática o que acontece é que **o React prefere pecar pelo excesso** do que 
 - que possuem poucos descendentes;
 - que não fazem muitos cálculos antes de renderizar HTML;
 - que não recebem muitas props — e, portanto, não precisam checar seus estados antes de renderizar seus dados ou passá-los adiante;
+
+# Bibliografia
+
+- Este README texto foi inspirado no Why [React Re-Renders](https://www.joshwcomeau.com/react/why-react-re-renders/) do Josh Comeau num nível tão suspeito que beira o plágio.
