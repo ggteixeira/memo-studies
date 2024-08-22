@@ -10,14 +10,17 @@ function App() {
   return (
     <div>
       <div className="container">
-        <button className="update-button" onClick={() => setState((curr) => !curr)}>
+        <button
+          className="update-button"
+          onClick={() => setState((curr) => !curr)}
+        >
           Click here to update state
         </button>
 
         <div className="vertical-line"></div>
 
         <UpdateBox state={state} />
-        <div className="vertical-line"></div>
+        <div className="vertical-line" />
         <NotUpdateBox />
       </div>
     </div>

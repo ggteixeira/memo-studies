@@ -4,7 +4,6 @@ const NotUpdateBox = () => {
   let box = useRef("");
 
   useEffect(() => {
-    console.log("NotUpdateBox: atualizou");
     box.current.style.backgroundColor = "#FFAFCC";
   });
 
