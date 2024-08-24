@@ -9,9 +9,9 @@ const UpdateBox = ({ state }) => {
       }}
     >
       <div>
-        <p> I'll always update with the state change</p>
+        <p> I'll always update on state changes</p>
       </div>
-      <p className="boolean-marker">{state.toString()}</p>
+      <p className="boolean-marker">{state.toString().toUpperCase()}</p>
     </div>
   );
 };

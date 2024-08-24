@@ -42,8 +42,8 @@
   height: 2rem;
 }
 
-.not-update-box,
-.update-box {
+.update-box,
+.not-update-box {
   height: 15rem;
   width: 15rem;
   background: rgba(0, 0, 0, 0.2);
@@ -58,12 +58,21 @@
 
   :is(div) {
     padding: 0.25rem;
+    text-align: center;
+  }
+}
+
+.not-update-box {
+  cursor: pointer;
+
+  :is(p) {
+    margin-bottom: 1rem;
   }
 }
 
 .boolean-marker {
   padding: 0.5rem;
-  width: 5rem;
+  min-width: 5rem;
   text-align: center;
   border-radius: 8px;
   border: 1px solid black;
