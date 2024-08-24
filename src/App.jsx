@@ -1,4 +1,4 @@
-import { useState, memo, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./reset.css";
 import "./App.css";
 import UpdateBox from "./components/UpdatedBox";
@@ -8,11 +8,6 @@ function App() {
   const [state, setState] = useState(false);
   const [isMemoized, setIsMemoized] = useState(false);
 
-  useEffect(() => {
-    console.log("isMemoized:");
-    console.log(isMemoized);
-  }, [isMemoized]);
-
   return (
     <div>
       <div className="container">
@@ -20,7 +15,7 @@ function App() {
           className="update-button"
           onClick={() => setState((curr) => !curr)}
         >
-          Click here to update state
+          <p>Click here to update state</p>
         </button>
         <div className="vertical-line"></div>
         <UpdateBox state={state} />
